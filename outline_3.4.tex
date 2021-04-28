@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.4:  Chain Rule}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+The {\bf Chain Rule } for derivatives:
+\begin{displaymath}
+  \frac{d}{dx}\left[f(g(x))  \right] = \frac{df}{dg}\frac{dg}{dx} \\
+  \end{displaymath}
+\begin{displaymath}
+  \left[f(g(x))  \right]' = f'(g(x))g'(x)\\
+  \end{displaymath}
+if $f$ and $g$ are differentiable functions.
+
+
+
+\vspace{0.5in}
+
+
+  (EXAMPLES)
+\begin{enumerate}
+\item{Find $h'(x)$ if $h(x) = \sqrt{1+x^3}$}
+  \vspace{1in}
+\item{Find $p'(x)$ if $p(x)=e^{10x-x^{2}}$}
+    \vspace{1in}
+  \item{Find $y'(x)$ if $y(x) = (2x + e^x)^3$}
+    \vspace{1in}
+
+
+    \item{Suppose $r(x) = 100(1-1/x)$ represents a rabbit population as a function of $x$, the amount of edible vegetation in a habitat and
+      $f(r) = \sqrt{r}$ represents the population of foxes as a function of the rabbit population.}
+      \vspace{2in}
+
+    \item{Previously we had written a function to model the hours of daylight in the Fraser Valley as a function of time $t$ in days.
+      \begin{displaymath}
+P(t) = 12.25 + 4\cos{\left(\frac{2\pi}{365}(t-174)  \right)}
+      \end{displaymath}
+      Calculate the rate at which the days are getting shorter as of today ($t=282$).  What are the units?
+      }
+
+
+\vspace{1in}
+
+      \item{Find $g''(t)$ if $g(t) = \sec^6(t)$}
+    \vspace{1.2in}
+
+      \item{Find $f'(x)$ if $f(x) = e^{5x}(x^2-3x-4)^{12}$}
+    \vspace{1.2in}
+      \item{Find $h'(t)$ if $h(t) = \sin{(\tan{(2t-4)})}$}
+    \vspace{1.2in}
+
+  \item{Find $P'(t)$ if $P(t) = \frac{1}{1+4e^{-kt}}$}
+    \vspace{1in}
+
+
+  \end{enumerate}
+
+\pagebreak
+
+
+The derivative of a general exponential function:
+\begin{displaymath}
+  \frac{d}{dx}\left[a^x  \right] = a^x\ln{a}\\
+  \end{displaymath}
+where $a>0$. 
+
+  \vspace{.1in}
+
+(EXAMPLES)
+\begin{enumerate}
+\item{Find $f'(x)$ if $f(x) = 7^x$}
+
+  \vspace{1in}
+
+\item{Find $w'(\theta)$ if $w(\theta) = 10^{\cos{\pi \theta}}$.}
+
+
+    \vspace{2in}
+\end{enumerate}
+
+(EXERCISES)
+\begin{enumerate}
+\item{Find an equation of the line tangent to $y=\sin{(\sin{x})}$ at the point $(\pi,0)$.}
+
+  \vspace{2in}
+\item{Find $u'''(x)$ if $u(x) = 2\cos(3x)$. (BONUS:  Find $u^{(15)}(x)$) }
+  \vspace{2in}
+\item{Find $h'(4)$ if $h(y) = \frac{1}{(\sqrt{y}+8)^{10}}$.}
+  \vspace{2in}
+\item{Find $f'(x)$ if $f(x) = 3^{x}\tan{x}\sin{x}$.}
+
+  
+
+  \vspace{2.5in}
+\item{Determine where on the curve $y=e^{-x^2}$ the tangent line has greatest slope.  Sketch the curve and the tangent line with greatest slope.}
+
+  \vspace{2in}
+\item{Suppose $f$ is a differentiable function with $f(0) = 3$, $f'(0)=5$, and $f''(0)=-2$, and suppose that $g(x) = e^{-x}f(x)$.
+Calculate $g'(0)$, and $g''(0)$.}
+
+\end{enumerate}
+\end{document}
+
+

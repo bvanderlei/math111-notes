@@ -1,0 +1,165 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 10.1:  Parametric equations}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Goal:}  We wish to describe the path of a moving particle in 2 dimensions.  We would like to allow paths that are
+curves that could not be described by the familiar $y=f(x)$.  An easy solution is to let $x$ and $y$ depend on time $t$.
+
+
+
+
+
+
+
+
+
+\vspace{2in}
+
+
+
+(EXAMPLES)
+\begin{enumerate}
+\item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = t^2+3t \\
+    y = t-2
+\end{array} \right.
+\end{displaymath}
+}
+
+\pagebreak
+
+\item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = \cos{t} \\
+    y = \sin{t} \\
+\end{array} \right.
+  \end{displaymath}
+   \vspace{0.1in}
+  for $0\leq t \leq 2\pi$
+}
+
+  \vspace{3in}
+  
+  \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = \cos{3t} \\
+    y = \sin{3t} \\
+\end{array} \right.
+  \end{displaymath}
+     \vspace{0.1in}
+  for $0\leq t \leq 2\pi$
+}
+
+\pagebreak
+
+  \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = 1 + 6t \\
+    y = -3 + 2t \\
+\end{array} \right.
+  \end{displaymath}
+     \vspace{0.1in}
+  for $0\leq t \leq 1$
+}
+
+    \vspace{3in}
+    
+      \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = 1 + 6t^2 \\
+    y = -3 + 2t^2 \\
+\end{array} \right.
+  \end{displaymath}
+     \vspace{0.1in}
+  for $-1 \leq t \leq 1$
+}
+
+    \vspace{1in}
+
+    \pagebreak
+
+  \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = \frac12(e^t + e^{-t}) \\[0.15in]
+    y = \frac12(e^t - e^{-t}) \\
+\end{array} \right.
+  \end{displaymath}
+     \vspace{0.1in}
+  for $-\infty \leq t \leq \infty$
+}
+
+        \vspace{3.5in}
+
+        
+      \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = t \\[0.15in]
+    y = \ln{t} \\
+\end{array} \right.
+  \end{displaymath}
+     \vspace{0.1in}
+  for $0 < t \leq \infty$
+}
+
+
+\end{enumerate}
+
+\pagebreak
+
+(INTERESTING EXAMPLES)  \emph{Get help from computer to plot}
+\begin{enumerate}
+        \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = e^{at}\cos{t} \\
+    y = e^{at}\sin{t}
+\end{array} \right.
+  \end{displaymath}
+
+}
+
+               \vspace{1in}
+
+             \item{
+  \begin{displaymath}
+  \left\{ \begin{array}{ll}
+    x = Ae^t\\
+    y = Ae^t + Be^{-t}
+\end{array} \right.
+  \end{displaymath}
+
+}
+
+\end{enumerate}
+
+\vspace{1in}
+
+(APPLICATION)
+
+A projectile is launched horizontally from the top of a 125 m tower.  If its initial velocity is 15 m/s, how where does
+it land?
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 4.2 Calculus Theorems}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+
+{\bf Intermediate Value Theorem}:  If $f$ is continuous on a closed interval $[a,b]$ and $N$ is a number
+between $f(a)$ and $f(b)$, then there is a number $c$ in $[a,b]$ such that $f(c)=N$.
+
+\vspace{1.5in}
+
+
+NOTES:
+
+\begin{itemize}
+\item{There may be more than one value of $c$ that satisfies the theorem.}
+\vspace{1in}
+\item{$f$ may take on values that are not between $f(a)$ and $f(b)$.}
+  \vspace{1in}
+  \end{itemize}
+
+(EXAMPLE)
+
+Suppose that the outside temperature this morning at 7:00 was 3$^{\circ}$C and at 11:00 the temperature was 10$^{\circ}$C.
+If temperature is a continuous function of time, we can conclude by the Intermediate Value Theorem
+that at some point the temperature was 8$^{\circ}$C.
+
+In fact, we can conclude that for any temperature $N$, such that $3\leq N \leq 10$, there was some time when the temperature
+took on that value.
+
+
+(COUNTEREXAMPLE)
+\emph{If the function is not continuous, the conclusion may or may not be true!}
+
+\pagebreak
+
+(APPLICATION)
+
+Use the Intermediate Value Theorem to prove that the equation $x^3+e^x=0$ has a solution in the interval $[-1,0]$.
+
+\vspace{1in}
+
+One way to search for the solution in a systematic way is called the {\bf Bisection Method}.  In this method, we divide the interval
+in half and apply the Intermediate Value Theorem to each subinterval.
+
+\vspace{1.5in}
+
+\begin{tabular}{|c| c| c| c|} \hline
+$a_n$ & $b_n$ & $h_n$ & $m_n$\\ 
+\hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & \hspace{1in}\\ 
+\hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & \hspace{1in}\\ 
+\hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & \hspace{1in}\\ 
+\hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & \hspace{1in}\\ 
+\hline
+\hspace{1in} & \hspace{1in} & \hspace{1in} & \hspace{1in} \\
+\hline
+\end{tabular}
+
+
+
+\pagebreak
+
+{\bf Rolle's Theorem}:
+Let $f$ be a function that satisfies the following conditions:
+
+\begin{itemize}
+\item{$f$ is continuous on $[a,b]$.}
+\item{$f$ is differentiable on $(a,b)$.}
+ \item{$f(a) = f(b)$}
+  \end{itemize}
+
+Then there exists a number $c$ in $(a,b)$ such that $f'(c)=0$.
+
+\vspace{2.5in}
+
+(EXAMPLE)
+
+Let $f(x)=x^3-4x+2$ on the interval $[0,2]$.
+\vspace{1in}
+
+
+(APPLICATION)
+
+Prove that there is \emph{at most} one solution to the equation $e^x+x^3 = 0$ in the interval $[-1,0]$.
+
+
+\pagebreak
+
+{\bf Mean Value Theorem}:
+Let $f$ be a function that satisfies the following conditions:
+
+\begin{itemize}
+\item{$f$ is continuous on $[a,b]$.}
+\item{$f$ is differentiable on $(a,b)$.}
+  \end{itemize}
+
+Then there exists a number $c$ in $(a,b)$ such that $f'(c)=\frac{f(b)-f(a)}{b-a}$.
+
+\vspace{2in}
+
+
+
+
+(EXAMPLES)
+Let $f(x) = x^2$ on $[-1,3]$.
+
+
+\vspace{2in}
+
+
+Let $f(x) = e^{-x}$ on $[0,2]$.
+
+
+\vspace{1in}
+
+\pagebreak
+
+(APPLICATIONS)
+If $s(t)$ represents position, $s'(t)$ is velocity.  The \emph{average velocity} over a time interval $a\leq t \leq b$ is
+\begin{displaymath}
+v_{avg}=\frac{s(b)-s(a)}{b-a} = \frac{\Delta s}{\Delta t}
+  \end{displaymath}
+
+So if we travel in a car 280 km in 4 hrs, what can we conclude with the Mean Value Theorem?
+\vspace{0.2in}
+If cameras that are 5 km apart on the highway take pictures of the same car and the time between the pictures is 2.1 minutes, what
+can be concluded about the speed of the car?
+
+\vspace{1in}
+
+
+Suppose that for a given function $f$, we know that $f'(x)\leq 2$ for all $x$.  If $f(4)=10$, what is largest that $f(9)$ could be?
+
+\vspace{1.5in}
+
+Suppose that for a given function $g$, it is known that $-1\leq f'(x) \leq 3$ for all $x$ in $[0,5]$.  What is the largest that $f(5)-f(0)$ could be?
+What is the smallest that $f(5)-f(0)$ could be?
+
+\vspace{1.5in}
+
+Proof of Mean Value Theorem:
+
+
+\pagebreak
+
+(THEOREM)  If $f'(x)=0$ for all $x$ in $[a,b]$, then $f(x) = constant$ on $[a,b]$.
+
+\vspace{2in}
+
+
+(COROLLARY)  If $f'(x)=g'(x)$ for all $x$ in $[a,b]$, then $f(x) = g(x) + constant$ on $[a,b]$.
+
+\end{document}
+
+

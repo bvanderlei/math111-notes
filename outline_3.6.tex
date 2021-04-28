@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.6:  Logarithmic Differentiation}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+The derivative of the {\bf natural logarithm function}:
+\begin{displaymath}
+  \frac{d}{dx}\left[\ln{x}  \right] = \frac{1}{x} 
+  \end{displaymath}
+
+\vspace{0.6in}
+
+The derivative of logarithm functions of other bases:
+\begin{displaymath}
+  \frac{d}{dx}\left[\log_b{x}  \right] = \frac{1}{x\ln{b}} 
+  \end{displaymath}
+
+\vspace{0.6in}
+
+
+
+  (EXAMPLES)
+\begin{enumerate}
+\item{Find $h'(x)$ if $h(x) = \ln{(\tan{x})}$}
+  \vspace{1in}
+\item{Find $p'(v)$ if $p(v)=v^3\ln{v}$}
+    \vspace{1in}
+  \item{Find $y'(t)$ if $y(t) = \frac{1}{\log_3{t}}$}
+    \vspace{1.2in}
+  \item{Find $f'(x)$ if $f(x) = \ln{(e^x+\sin{x})}$}
+    \vspace{1.2in}
+  \item{Find $g'(t)$ if $g(t) = \ln{(\ln{10t})}$}
+    \vspace{1.2in}
+  \item{Find $f'(x)$ if $f(x) = \ln{|x|}$}
+    \vspace{2in}
+  \item{Find $\frac{dy}{dx}$ if $y= \ln{(3x+y^2)}$}
+    \vspace{2in}
+  \item{Find $f'(x)$ if $f(x) = \ln{\left(\frac{\sqrt{x}\cos{x}}{2-x^3}\right)}$
+
+    \vspace{0.1in}
+    \emph{Hint:  Algebra of logaritms:}
+
+    \begin{itemize}
+    \item{$\ln{(ab)} = \ln{a} + \ln{b}$}
+    \item{$\ln{(a/b)} = \ln(a) - \ln(b)$}
+    \item{$\ln{(a^r)} = r\ln(a)$}
+      \end{itemize}
+  }
+    \pagebreak
+
+
+      \end{enumerate}
+    \begin{center}
+\Large
+\rm{Logarithmic Differentiation}
+\end{center}
+In the following examples, find $\frac{dy}{dx}$ by differentiating $\ln{y}$ using implicit differentiation.  The final answer can be written in terms of $x$.
+
+      \begin{enumerate}
+    
+    \item{$y = \frac{(2x+1)^8\tan^3{x}}{e^x-x}$}
+
+      \vspace{2in}
+
+          \item{$y = \frac{x^{2/5}\sqrt{x^2+5x}}{(x-1)^4}$}
+      \vspace{2in}
+
+                \item{$y = e^{\sin{x}}(x^2-1)^8(\ln{x})^3$}
+      \vspace{2in}
+
+
+      \item{$y =x^{\tan{x}}$}
+    \vspace{1.2in}
+      \item{$y =(\ln{x})^x$}
+    \vspace{1.5in}
+
+  \end{enumerate}
+    
+      In summary, there are 4 different cases of functions involving exponents.  Suppose $b$, and $n$ are constants, while $f$ and $g$ are functions.
+      Consider the derivatives of the following functions:
+
+      \begin{itemize}
+      \item{$b^n$}
+      \item{$[f(x)]^n$}
+      \item{$b^{g(x)}$}
+      \item{$[f(x)]^{g(x)}$}
+      \end{itemize}
+
+\vspace{.5in}
+
+A limit definition of $e$:
+\begin{displaymath}
+\lim_{x\to 0}\left(1 + x  \right)^{1/x}
+  \end{displaymath}
+(\emph{Note that our previous definition of $e$ did not give us a way to approximate it's value.})
+  \vspace{2in}
+
+OR
+\begin{displaymath}
+\lim_{n\to \infty}\left(1 + \frac{1}{n}  \right)^n
+  \end{displaymath}
+
+\end{document}
+
+

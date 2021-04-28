@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.10:  Linear Approximation}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+Idea:  The graph of a function $f$ is very close to the line tangent at a $x=a$, so long as we look \emph{near } $x=a$.
+
+\vspace{0.1in}
+
+Idea:  The value of the function \emph{near} $x=a$ should be \emph{near} the value of the tangent line.  In this context, we refer to
+the tangent line as the {\bf linearization } of $f$ at $a$.
+
+
+\vspace{3.5in}
+
+(EXAMPLE)\\
+
+Estimate $\sqrt{4.1}$ using the linearization of the square root function.
+
+
+\vspace{3in}
+
+Note this approach does not do very well to estimate $\sqrt{5}$, or $\sqrt{6}$.
+
+
+
+\pagebreak
+
+{\bf Linearization} is also called \emph{linear approximation} or \emph{tangent line approximation}.
+
+\vspace{.15in}
+
+(EXAMPLES)
+
+\begin{enumerate}
+  
+\item{Estimate $e^{0.1}$ using a linear approximation.}
+
+\vspace{3in}
+
+
+
+\item{Estimate $\ln{1.2}$ using a linearization.}
+
+\vspace{2in}
+
+
+
+\item{Suppose $P(t)$ represents a population, and that the function satisfies the initial value problem.
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+\frac{dP}{dt} = 2.2\sqrt{P} \\
+P(0) = 900 \\
+\end{array} \right.
+\end{displaymath}
+Use linearization to estimate $P(1)$.
+}
+  \end{enumerate}
+\pagebreak
+
+Another way to compute this approximations is in terms of {\bf differentials}.  The idea is that we replace $f$ with the linearization $L$
+and let $dx$ be a small change in $x$.  Then $dy$ is the resulting change in $y$.
+
+\begin{displaymath}
+dy = f'(x)dx
+  \end{displaymath}
+
+\vspace{1.25in}
+
+(EXAMPLES)
+
+\begin{enumerate}
+\item{Compute $dy$ and $\Delta y$ if $y=f(x)=x^3+x^2-2x+1$ and $x$ changes from 2 to 2.05.}
+
+
+\vspace{1.75in}
+\item{A sphere is measured and found to be 21 cm with a possible error in the measurement of at most 0.05 cm.  
+\begin{enumerate}
+\item{Estimate the maximum error made in using this measurement to compute the volume of the sphere.}
+\item{Estimate the maximum \emph{relative} error made in using this measurement to compute the volume of the sphere.}
+\end{enumerate}
+  }
+  \pagebreak
+  \item{Estimate the volume of a thin cylindrical shell with radius $r$, height $h$, and thickness $dr$.}
+
+\end{enumerate}
+
+\vspace{3in}
+
+A BETTER APPROXIMATION
+
+\vspace{0.1in}
+
+Suppose we are not satisfied with $e^{0.1}\approx 1.1$, or $\sqrt{4.1}\approx 2.025$, can we do better?
+\end{document}
+
+

@@ -1,0 +1,288 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 1:  Precalculus Review}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+(DEFINITION)\\
+
+A {\bf function} is:
+
+\vspace{0.5in}
+
+(EXAMPLES)\\
+
+Relationships that we might think of as a function:
+
+\vspace{0.5in}
+
+Ways that we might describe a function:
+
+\vspace{1.5in}
+
+Relationships that are \emph{not} functions
+
+\vspace{1.5in}
+
+(NOTATION)\\
+
+If $f(x) = \frac{x}{2}-1$ and  $g(p) = p^2+2$\\
+
+\vspace{0.5in}
+
+Then $f(4) = $ \hspace{3in} $g(3) = $\\
+
+\vspace{0.5in}
+
+$f(a) = $ \hspace{3in} $g(p+h) = $\\
+
+
+\vspace{1.5in}
+
+(DEFINITION)\\
+
+The {\bf domain} of a function is:
+
+\vspace{0.5in}
+
+(DEFINITION)\\
+
+The {\bf range} of a function is:
+
+\vspace{0.5in}
+
+(DEFINITION)\\
+
+The {\bf graph} of a function is:
+
+\vspace{0.5in}
+
+(EXAMPLES)\\
+
+What are the domain and range of the following functions?  Sketch the graph and label two points on the graph.
+
+\vspace{.25in}
+
+$y(x) = \sqrt{x-5}$
+
+\vspace{1.5in}
+
+$f(x) = \frac{1}{x^2-9}$
+
+\vspace{1.5in}
+
+$p(x) = \sqrt{4-x^2}$
+
+%\vspace{1.5in}
+
+%$q(x) = \frac{x^2-1}{x+1}$
+
+
+\pagebreak
+
+\begin{center}
+\Large
+\rm{Linear functions}
+\end{center}
+
+(DEFINITIONS)\\
+
+A function $f$ is {\bf linear} if:
+
+\vspace{1.0in}
+
+{\bf Slope}
+
+\vspace{1.5in}
+
+(EXAMPLES)\\
+
+Let $C$ be a temperature measured in degrees Celsius and $F$ be the same temperature measured in degrees Fahrenheit.
+We know $F$ is a linear function of $C$ and that $F(0)=32$ and $F(100)=212$.  Find a formula for $F(C)$.
+\begin{enumerate}
+\item{Find a formula for $F(C)$.}
+\item{Give an interpretation of the slope.  What are the units?}
+\end{enumerate}
+
+
+\vspace{1.5in}
+
+Let $T(t)$ represent the temperature of a lake as a function of time.  $T$ is measured in degrees Celsius and $t$ is measured in hours.
+Suppose that we know that $T$ is a linear function and
+that $T(4) = 6$ and $T(8) = 7$.
+\begin{enumerate}
+\item{Find $T(t)$ and give an interpretation of the slope.  What are the units?}
+\item{How much does $T$ change in 10 hours?}
+\end{enumerate}
+
+
+\vspace{1.5in}
+
+For small mammals it has been determined that body mass is proportional to heart mass.  If a 4.7 kg dog has a heart mass of 33 g, find
+the mass of a 1.8 kg cat.  Present your solution in terms of a linear function.
+
+\pagebreak
+
+\begin{center}
+\Large
+\rm{Piecewise defined functions}
+\end{center}
+
+In some cases it is useful to describe functions by giving different output rules depending on
+
+(EXAMPLES)\\
+  
+  \begin{displaymath}
+g(x) =   \left\{ \begin{array}{ll}
+x^2 & x \ge 1 \\
+2-x & x < 1\\
+\end{array} \right.
+  \end{displaymath}
+
+  \vspace{1.5in}
+
+    \begin{displaymath}
+f(x) =   \left\{ \begin{array}{ll}
+x-1 & x > 0 \\
+3 & -2 \le x \le 0\\
+2-x & x < -2 \\
+\end{array} \right.
+  \end{displaymath}
+
+  \vspace{1.5in}
+
+    \begin{displaymath}
+  h(x) = |x|
+  \end{displaymath}
+
+    \vspace{1.5in}
+
+
+  (EXAMPLES) Some situations where piecewise defined functions might make sense:
+
+
+
+  \pagebreak
+
+  \begin{center}
+\Large
+\rm{Algebra of functions}
+\end{center}
+If $f$ and $g$ are functions, then so are $f+g$, $f-g$, $fg$, and $\frac{f}{g}$ for the appropriate domain
+\\
+
+(EXAMPLE) \\
+
+Suppose $a(t) = t^2 + 1$ represents the population of fish species A, $b(t) = \frac{500}{1+2t}$ represents the population of fish species B, and $p(t)$ represents the average individual mass of a fish of species A, then: \\
+
+\begin{enumerate}
+\item{$(a+b)(t) = $ \hspace{2in} and represents }
+\item{$(a-b)(t) = $ \hspace{2in} and represents }
+\item{$(ap)(t) = $ \hspace{2in} and represents }
+  \end{enumerate}
+
+
+If $f$ and $g$ are functions, then so does $f\circ g$ on the appropriate domain
+\\
+
+(EXAMPLE) \\
+\begin{enumerate}
+  \item{
+Suppose $r(x) = 100(1-1/x)$ represents a rabbit population as a function of $x$, the amount of edible vegetation in a habitat and
+$f(r) = \sqrt{r}$ represents the population of foxes as a function of the rabbit population, then: \\
+
+$f\circ r = $ \hspace{2in} and represents
+  }
+
+    \vspace{0.5in}
+    
+  \item{ If $f(x) = \frac{x}{x+3}$ and $g(x) = \frac{1}{x}$, then \\
+    $f(g(x)) = $  \hspace{2in} with domain \\ 
+
+    \vspace{0.5in}
+    
+    $g(f(x)) = $  \hspace{2in} with domain \\
+    
+  }
+
+    \vspace{0.5in}
+    
+  \item{ If $f(x) = \sqrt{x}$ and $g(x) = x^2+3x$, then \\
+    $f(g(x)) = $  \hspace{2in} with domain \\ 
+
+    \vspace{0.5in}
+    
+    $g(f(x)) = $  \hspace{2in} with domain \\
+    
+    }
+
+\end{enumerate}
+
+
+\pagebreak
+
+  \begin{center}
+\Large
+\rm{Inverse functions}
+  \end{center}
+  (DEFINITION) 
+  If $f$ is  a one-to-one function, then $f^{-1}$ is the function that 'undoes' $f$
+  \vspace{2in}
+
+  (EXAMPLES)
+
+  \begin{enumerate}
+  \item{
+Let $C$ be a temperature measured in degrees Celsius and $F$ be the same temperature measured in degrees Fahrenheit.
+Let $f$ be the function that associates $C$ to $F$.  We found earlier that $f(C) = \frac95 C + 32$.\\
+Suppose now we know the temperature is 45 degrees Fahrenheit and want to compute the temperature in degrees Celsius.
+We can make use of $f^{-1}$.
+}
+\vspace{3in}
+\item{ If $g(x) = x^3$ then $g^{-1}(x) = $ \\
+  
+  \vspace{0.2in}
+  
+  If $h(w) = 3w$ then $g^{-1}(w) = $ \\
+  
+  \vspace{0.2in}
+
+  If $f(y) = \frac{1}{y}$ then $f^{-1}(y) = $ \\
+
+  \vspace{0.2in}
+  
+}
+
+\item{If $g(x) = x^3+4$ then $h^{-1}(x) = $}
+  
+  \vspace{2in}
+  
+\item{If $h(x) = \frac{4x-1}{2x+3}$ then $h^{-1}(x) = $}
+
+    \vspace{2in}
+  
+\item{If $f(x) = x^2-x$ for $x \ge \frac12 $, then $f^{-1}(x) = $
+
+}
+\end{enumerate}
+
+
+
+  
+
+
+\end{document}

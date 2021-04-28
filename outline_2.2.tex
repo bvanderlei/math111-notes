@@ -1,0 +1,295 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 2.2:  Limits}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+
+(DEFINITION)  Suppose $f$ is a function defined near a number $a$.  Then 
+\begin{displaymath}
+  \lim_{x\to a}f(x) = L
+  \end{displaymath}
+means $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$.  We say that $L$ is the {\bf limit} of $f$ as $x$ goes to $a$.
+
+\vspace{1.5in}
+
+(EXAMPLES)
+\begin{enumerate}
+  \item{
+\begin{displaymath}
+  \lim_{x\to 0} x^2-3 = 
+  \end{displaymath}
+
+\vspace{.5in}
+How close to $0$ does $x$ need to be for $x^2-3$ to be within 0.1 of the limit?
+
+}
+\vspace{1.5in}
+
+
+\item{
+\begin{displaymath}
+  \lim_{x\to 2} 2^x = 
+  \end{displaymath}
+
+\vspace{.5in}
+How close to $2$ does $x$ need to be for $2^x$ to be within 0.05 of the limit?
+
+  }
+
+  \pagebreak
+  
+  \item{
+\begin{displaymath}
+  \lim_{x\to 0} \frac{4x+2x^2}{x} = 
+  \end{displaymath}
+
+\vspace{1in}
+
+  }
+
+
+  \item{Suppose that
+      \begin{displaymath}
+g(x) =   \left\{ \begin{array}{ll}
+ \frac{4x+2x^2}{x} & x \ne 0 \\
+3 & x = 0\\
+\end{array} \right.
+  \end{displaymath}
+Find $  \lim_{x\to 0} = g(x)$.
+
+\vspace{1.3in}
+
+  }
+
+
+      \item{
+\begin{displaymath}
+  \lim_{x\to 2} \frac{x-2}{x^2+x-6} = 
+  \end{displaymath}
+
+\vspace{1.5in}
+
+  }
+
+              \item{
+\begin{displaymath}
+  \lim_{x\to 4} \frac{\frac14 - \frac{1}{x}}{4-x} = 
+  \end{displaymath}
+
+\vspace{.8in}
+
+  }
+
+                \pagebreak
+                
+              \item{
+\begin{displaymath}
+  \lim_{x\to 0} \frac{\sin{x}}{x} = 
+  \end{displaymath}
+
+\vspace{.5in}
+
+  }
+
+
+                      \item{
+\begin{displaymath}
+  \lim_{x\to 0} \frac{\sqrt{x^4+16}-4}{x^4} = 
+  \end{displaymath}
+
+\vspace{2.5in}
+
+  }
+
+
+  \end{enumerate}
+
+
+\begin{center}
+\Large
+\rm{One sided limits}
+\end{center}
+
+All functions do not have limits in all circumstances.  Consider such a function:
+      \begin{displaymath}
+h(x) =   \left\{ \begin{array}{ll}
+ 0 & x < 0 \\
+1 & x \ge 0\\
+\end{array} \right.
+  \end{displaymath}
+
+\vspace{0.2in}
+
+We say that $\lim_{x \to 0}h(x)$ does not exist.  
+
+\vspace{0.2in}
+(DEFINITION)
+ Suppose $f$ is a function defined near a number $a$.  Then 
+\begin{displaymath}
+  \lim_{x\to a^+}f(x) = L
+  \end{displaymath}
+means $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ with $x>a$.  We say that $L$ is the {\bf limit} of $f$ as $x$ goes to $a$ {\bf from the right}.
+
+\vspace{2.5in}
+
+(THEOREM) $\lim_{x\to a}f(x) = L $ if and only if $\lim_{x\to a^+}f(x) = L $ and $\lim_{x\to a^-}f(x) = L $. \\
+
+\vspace{.5in}
+
+(EXAMPLES)
+\begin{enumerate}
+
+\item{
+  \begin{displaymath}
+f(x) =   \left\{ \begin{array}{ll}
+ 2-2x & x \le 0 \\
+\sin{x} & x > 0\\
+\end{array} \right.
+  \end{displaymath}
+Find $\lim_{x\to 0^+}f(x)$, $\lim_{x\to 0^-}f(x)$, and $\lim_{x\to 0}f(x)$.
+}
+
+  \vspace{1.5in}
+  
+\item{
+  \begin{displaymath}
+p(x) =   \left\{ \begin{array}{ll}
+ |x| & x \neq 0 \\
+4 & x = 0\\
+\end{array} \right.
+  \end{displaymath}
+Find $\lim_{x\to 0^+}p(x)$, $\lim_{x\to 0^-}p(x)$, and $\lim_{x\to 0}p(x)$.
+}
+
+  
+  \vspace{1.5in}
+  
+  \item{
+  \begin{displaymath}
+g(t) =   \left\{ \begin{array}{ll}
+e^t &  t < 3\\
+\ln{t} & t > 3\\
+\end{array} \right.
+  \end{displaymath}
+Find $\lim_{t\to 3^+}g(t)$, $\lim_{t\to 3^-}g(t)$, and $\lim_{t\to 0}g(t)$.
+}
+
+\end{enumerate}
+
+
+\pagebreak
+
+
+\begin{center}
+\Large
+\rm{Infinite Limits}
+\end{center}
+
+(EXAMPLE) $\lim_{x\to 0}\frac{1}{x^2} = \infty $  \\
+
+\vspace{1in}
+
+(DEFINITION)  Suppose $f$ is a function defined near a number $a$.  Then 
+\begin{displaymath}
+  \lim_{x\to a}f(x) = \infty
+  \end{displaymath}
+means $f(x)$ can be made arbitrarily large  by taking $x$ sufficiently close to $a$.  We say that the limit of $f$ is {\bf infinity}.
+
+\vspace{.5in}
+
+(EXAMPLES)
+
+\begin{enumerate}
+\item{
+  \begin{displaymath}
+  \lim_{x\to 0} -\frac{1}{x^2} =
+  \end{displaymath}
+
+}
+
+  \vspace{1in}
+  
+\item{
+  \begin{displaymath}
+  \lim_{x\to 2^+} \frac{x}{x-2} =
+  \end{displaymath}
+}
+
+  \vspace{1.5in}
+  
+\item{  \begin{displaymath}
+  \lim_{x\to 2^-} \frac{x}{x-2} =
+  \end{displaymath}
+}
+  
+
+\end{enumerate}
+\vspace{.5in}
+
+\pagebreak
+
+\vspace{1in}
+
+\begin{center}
+\Large
+\rm{Vertical Asymptotes}
+\end{center}
+
+
+(DEFINITION) The graph of a function $f$ has a {\bf vertical asymptote} at $x=a$ if any of the following are true:
+ \begin{displaymath}
+  \lim_{x\to a} f(x) = \infty \quad\quad\quad \lim_{x\to a^+} f(x) = \infty \quad\quad\quad \lim_{x\to a^-} f(x) = \infty 
+  \end{displaymath}
+ \begin{displaymath}
+  \lim_{x\to a} f(x) = -\infty \quad\quad\quad \lim_{x\to a^+} f(x) = -\infty \quad\quad\quad \lim_{x\to a^-} f(x) = -\infty 
+  \end{displaymath}
+  
+
+\vspace{.5in}
+
+(EXAMPLES) \\
+
+\begin{displaymath}
+\tan{x}
+  \end{displaymath}
+
+\vspace{1.5in}
+
+\begin{displaymath}
+\ln{x}
+  \end{displaymath}
+
+\vspace{1.5in}
+
+\begin{displaymath}
+f(x) = \frac{3+x}{e^x-e}
+  \end{displaymath}
+
+\vspace{1.5in}
+
+\begin{displaymath}
+g(t) =   \left\{ \begin{array}{ll}
+2  &  t \le -4\\
+\frac{1}{t+4} & t > -4\\
+\end{array} \right.
+  \end{displaymath}
+
+
+\end{document}
+
+

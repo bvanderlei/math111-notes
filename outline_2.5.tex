@@ -1,0 +1,189 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 2.5:  Continuity}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+(DEFINITION)  A function $f$ is {\bf continuous} at $x=a$ if $\lim_{x\to a}f(x) $ exists and $\lim_{x\to a}f(x)=f(a)$
+\vspace{1in}
+
+(EXAMPLES)\\
+
+\vspace{1in}
+
+(DEFINITION)  A function $f$ is {\bf continuous} on an interval $[a,b]$ it is continuous for all numbers in the interval.
+\vspace{1in}
+
+(EXAMPLES)\\
+
+\vspace{1in}
+
+
+A function $f$ is {\bf not continuous} at $x=a$ if:
+\begin{enumerate}
+\item{}
+
+  \vspace{0.5in}
+
+  
+
+\item{}
+
+    \vspace{0.5in}
+
+  
+\item{}
+
+    \vspace{0.5in}
+
+
+  \end{enumerate}
+
+\pagebreak
+
+    (EXAMPLES)\\
+
+\begin{enumerate}
+\item{{\bf Jump discontinuity}
+      \begin{displaymath}
+g(t) =   \left\{ \begin{array}{ll}
+ 2-t^2 & t \leq -1 \\
+e^{-t} & t > -1 \\
+\end{array} \right.
+  \end{displaymath}
+
+}
+
+  \vspace{1in}
+
+  
+
+\item{ {\bf Removable discontinuity}
+      \begin{displaymath}
+p(x) = \frac{x-4}{x^2-x-12}
+  \end{displaymath}
+
+}
+
+    \vspace{1.5in}
+
+  
+  \item{ {\bf Infinite discontinuity}
+      \begin{displaymath}
+q(x) = \frac{4}{(x-3)^2}
+  \end{displaymath}
+
+          \vspace{2in}
+
+    \begin{displaymath}
+r(x) = \frac{x-4}{x^2-x-12}
+  \end{displaymath}
+
+  }
+
+    \vspace{0.5in}
+
+
+    
+  \end{enumerate}
+
+
+\pagebreak
+
+(EXAMPLES)\\
+
+\begin{enumerate}
+\item{What value of $b$ makes $h$ continuous at $\pi/2$?
+      \begin{displaymath}
+h(t) =   \left\{ \begin{array}{ll}
+ \sin{t} & t > \pi/2 \\
+b-t & t \leq \pi/2 \\
+\end{array} \right.
+  \end{displaymath}
+
+}
+
+  \vspace{1in}
+
+  \item{  Is $p$ continuous at $x=0$?  Why, or why not?
+  \begin{displaymath}
+p(x) =   \left\{ \begin{array}{ll}
+ |x| & x \neq 0 \\
+4 & x = 0\\
+\end{array} \right.
+  \end{displaymath}
+}
+
+    \vspace{1in}
+    
+  \item{Is it possible to define $w(x)$ so that $w$ is continuous at $x=1$?
+  \begin{displaymath}
+w(x) = \frac{x^3-1}{x-1}
+  \end{displaymath}
+
+  }
+
+    \vspace{1in}
+    
+\end{enumerate}
+
+
+
+(COMMON CONTINUOUS FUNCTIONS) \\
+\vspace{0.2in}
+
+\begin{enumerate}
+\item{Power functions, $x^r$, }
+  \vspace{0.1in}
+\item{Exponential functions, $a^x$}
+    \vspace{0.1in}
+  \item{Logarithmic functions, $\log_a{x}$}
+      \vspace{0.1in}
+    \item{Trigonometric functions $\sin{x}$, $\cos{x}$}
+        \vspace{0.1in}
+\item{Absolute value function $|x|$}
+        \vspace{0.1in}
+  
+  \end{enumerate}
+    
+\pagebreak
+
+Since we can do {\bf algebra with limits}, we can also ``do  algebra `` with continuous functions.  If $f$ and $g$ are
+functions which are both continuous at $x=a$, then so are 
+
+\vspace {1.2in}
+
+(EXAMPLES)
+
+\vspace {1.2in}
+
+(THEOREM) If $\lim_{x\to a}g(x)  = b $ and $f$ is continuous at $b$, then  $\lim_{x\to a}f(g(x))  = f(b) $.
+
+\vspace{1.25in}
+
+
+(EXAMPLES)
+  \begin{displaymath}
+\lim_{x \to 0}\cos{(x^2 + \pi)}
+  \end{displaymath}
+
+
+
+
+\end{document}
+
+

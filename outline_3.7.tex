@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.7:  Rates of Change}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+DENSITY\\
+Consider a thin wire and let $m(x)$ represent the mass of wire to the left of position $x$.  Suppose $x$ is in cm and $m(x)$ is in grams.
+\begin{displaymath}
+m(x)=\frac{3x}{x+1} \quad\quad 0\leq x\leq 2
+\end{displaymath} 
+Interpret $dm/dx$.  What are the units?
+
+\vspace{1.in}
+
+
+ELECTRIC CURRENT\\
+Suppose that $Q(t)= t^3-2t^2+6t+2$ represents the quantity of charge that has passed a particular position in
+a wire up to time $t$.  Time is measured in seconds and $Q$ is measured in coulombs.  Interpret $Q'(t)$.
+
+\vspace{1.in}
+
+FLUID FLOW\\
+Law of laminar flow states:
+\begin{displaymath}
+v(r)=\frac{P}{4\eta L}(R^2-r^2)
+\end{displaymath}
+
+\begin{enumerate}
+	\item{How does $v$ change with respect to radial position $r$?}
+	\item{If a position were fixed, how would $v$ change with respect to pressure? viscosity?}
+\end{enumerate}
+
+\vspace{1.5in}
+
+\pagebreak
+PROJECTILE MOTION\\
+The height of a projectile with initial height $h_0$ and initial upward velocity $v_0$ is \\ $h(t)=h_0 + v_0t-4.9t^2$.
+Here $h$ is measured in meters and $t$ in seconds.   
+
+\begin{enumerate}
+	\item {Show that $h$ satisfies the stated initial conditions.}
+	\item{Show that the vertical acceleration of the object is constant.}
+	\item{What is the maximum height of the projectile if $h_0=2$ and $v_0=24.5$?}
+	\item{How fast is the object going when it hits the ground if $h_0=2$ and $v_0=24.5$?}
+\end{enumerate}
+
+\pagebreak
+
+CHEMISTRY\\
+
+Let $x(t)$ be the concentration of product in a chemical reaction.
+\begin{displaymath}
+x(t)=\frac{ak^2t}{1+akt}
+\end{displaymath}
+Here $a$ and $k$ are positive constants.  Suppose $x$ is in units of mol/L and $t$ is in seconds.
+\begin{enumerate}
+\item{Find the rate of reaction at time $t=1$.}
+\item{What happens to $x$ as $t\to\infty$?}
+\item{What happens to the rate of reaction as $t\to\infty$?}
+\item{Show that $dx/dt = k(a-x)^2$?}  
+  \end{enumerate}
+
+\pagebreak
+
+RUMOR SPREAD\\
+Let $p(t)$ represent the proportion of a population that has heard a rumor.  Suppose time $t$ is measured in hours
+\begin{displaymath}
+p(t)=\frac{1}{1+ae^{-kt}}
+\end{displaymath}
+\begin{enumerate}
+	\item {Find the values of $a$ and $k$ if p(0)= 0.05 and p(1)=0.12.}
+	\item {Determine the rate at which the rumor is spreading at time $t=3$ hours.}
+	\item {When is the rumor spreading the fastest?}
+	\item{Show that $dp/dt = kp(1-p)$.}
+\end{enumerate}
+
+\vspace{1.5in}
+
+\pagebreak
+
+ECONOMICS\\
+The cost in dollars of producing $x$ units of a certain commodity is given by a cost function.
+\begin{displaymath}
+C(x) = 5000+ 10x+ 0.08x^2
+\end{displaymath}
+\begin{enumerate}
+	\item {Find the average rate of change $C$ with respect to production level $x$ when $x$ increases from 100 to 101.}
+	\item {Find the average rate of change $C$ with respect to production level $x$ when $x$ increases from 100 to 105.}
+	\item {Find the instantaneous rate of change of $C$ with respect to $x$ when $x=100$.  This is called the \emph{marginal cost}.}
+	\item {Use the marginal cost to \emph{estimate} the increase in cost associated with increasing production from $x=100$ to $x=105$.}
+\end{enumerate}
+ 
+
+
+\end{document}
+
+

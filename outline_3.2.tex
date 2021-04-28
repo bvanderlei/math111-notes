@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.2:  Derivatives of Products and Quotients}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+The {\bf Product Rule } for derivatives:
+\begin{displaymath}
+\frac{d}{dx}\left[f(x)g(x)  \right] = f(x)\frac{d}{dx}[g(x)] + g(x)\frac{d}{dx}[f(x)]
+  \end{displaymath}
+if $f$ and $g$ are differentiable functions.
+
+
+
+\vspace{0.5in}
+
+
+  (EXAMPLES)
+\begin{enumerate}
+\item{$f(x) = x^3e^x$}
+  \vspace{0.3in}
+\item{$w(y) = y^3\left(10-\frac{15}{y^4}\right)$}
+    \vspace{0.3in}
+  \item{$g(t) = t^5h(t)$.  Find $g'(2)$ if $h(2)=-1$ and $h'(2)=3$}
+    \vspace{0.3in}
+    \item{$h(x) = 7\sqrt[3]{x}$}
+  \end{enumerate}
+
+\vspace{0.3in}
+
+Why does it work?  
+
+\vspace{2.5in}
+
+\pagebreak
+
+(APPLICATION)\\
+A pond has a population of tadpoles.  It is estimated that the current population of tadpoles is 3000, but that this
+number is falling by 150 per week.  The current average mass of a tadpole is estimated to be 45 grams and is rising by
+3.6 grams per week.
+\begin{enumerate}
+\item{Estimate the total biomass of tadpoles.}
+  \vspace{0.2in}
+  \item{Estimate the rate at which the biomass is changing.}
+  \end{enumerate}
+
+\vspace{1.5in}
+
+(EXERCISE)\\
+Let $f(x) = xe^x$.  Find $f'(x)$, $f''(x)$, and $f'''(x)$.  Guess a formula for $f^{(n)}(x)$.
+
+\vspace{1.5in}
+
+The {\bf Quotient Rule } for derivatives:
+\begin{displaymath}
+\frac{d}{dx}\left[\frac{f(x)}{g(x)}  \right] = \frac{g(x)\frac{d}{dx}[f(x)] - f(x)\frac{d}{dx}[g(x)]}{[g(x)]^2}
+  \end{displaymath}
+if $f$ and $g$ are differentiable functions.
+
+\vspace{0.1in}
+
+  (EXAMPLES)
+\begin{enumerate}
+\item{$f(x) = \frac{x^2}{e^x}$}
+  \vspace{0.5in}
+\item{$u(t) = \frac{t^2-2t+5}{t^4+1} $}
+    \vspace{1in}
+  \item{$g(x) = \frac{10}{x^8}$}
+    \vspace{0.5in}
+    \item{$h(w) = \frac{e^w}{1-12e^w}$}
+    \vspace{0.5in}
+    \item{$f(w) = \frac{1-12e^w}{e^w}$}
+
+    \vspace{0.5in}
+    \item{$y(x) = e^{-x}$}
+\end{enumerate}
+
+
+
+
+\vspace{0.3in}
+
+Why does it work?
+
+\vspace{2.5in}
+
+
+(APPLICATION)
+A pond has a population of tadpoles and trout.  It is estimated that the current population of tadpoles is 3000, but that this
+number is falling by 150 per week.  The trout population is estimated to be 220 and rising by about 3 trout per week. What is the current
+estimate of ``tadpoles per trout'' and how is it changing?
+
+
+\pagebreak
+
+(EXERCISES)
+\begin{enumerate}
+\item{Find $f''(x)$ if $f(x) = (x^3+1)e^x$.}
+
+  \vspace{2in}
+
+\item{Find an equation of the line tangent to $y=\frac{1+x}{1+e^x}$ at the point $\left(0,\frac12\right)$.}
+
+  \vspace{2in}
+
+\item{Find $p'(x)$ if $p(x) = \frac{2+xe^x}{1+x^2}$.}
+
+  \vspace{2in}
+
+\item{Determine the {\bf Reciprocal Rule}
+\begin{displaymath}
+\frac{d}{dx}\left[\frac{1}{g(x)}\right]= \frac{-g'(x)}{[g(x)]^2}
+\end{displaymath}
+}
+\end{enumerate}
+\end{document}
+
+

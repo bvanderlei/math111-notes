@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.9:  Related Rates}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+We wish to consider situations where two or more quantities are related to each and are \emph{also changing with time}.
+To avoid confusion it is important that we use Leibnitz notation ($\frac{dy}{dt}$) in place of prime notation ($y'$).
+
+\vspace{0.1in}
+
+EXAMPLE \\
+If $y=a^2b$, then
+\begin{displaymath}
+\frac{dy}{da} = \hspace{1.1in} \frac{dy}{db} = 
+\end{displaymath} 
+If $y=a^2b$ \emph{and} $a$ and $b$ are both functions of $t$, then
+\begin{displaymath}
+\frac{dy}{dt} =
+\end{displaymath} 
+
+\vspace{.3in}
+
+EXAMPLES \\
+
+\begin{enumerate}
+\item{Suppose a particle is moving around the circle $x^2 + y^2 = 25$, where $x$ and $y$ are in cm.  How is the $x$ coordinate of the particle
+changing at the point $(-3,4)$ if the $y$ coordinate is increasing at a rate of 2 cm/s?
+}
+  
+\vspace{1.5in}
+\item{The ideal gas law is $PV=nRT$ where $T$ is temperature in Kelvins, $P$ is pressure in atmospheres, $V$ is the volume of the gas in liters, $n$ is the  number of moles of gas, and $R=0.08121$ is a constant.  Suppose that at a certain instant, $P=8$ atm and is increasing at a rate of 0.1 atm/min,
+  and $V=10$L and is decreasing at a rate of 0.15 L/min.  Find the rate of change of $T$ with respect to time at that instant if $n=10$ mol.
+
+  }
+
+\end{enumerate}
+
+
+\pagebreak
+
+\begin{center}
+\Large
+\rm{Related Rates}
+\end{center}
+In related rates problems, variables are functions of time.  The typical strategy follows four points.
+\begin{enumerate}
+\item{Determine those quantities that are changing and label them as variables.}
+\item{Find an equation that relates the variables.  (Pictures are helpful if geometry is involved.)}
+\item{Differentiate the equation with respect to time.}
+\item{Solve for the desired quantity.}
+  
+\end{enumerate}
+
+
+(EXAMPLES)
+
+
+\begin{enumerate}
+\item{A spherical shaped cell is growing at a rate of 20 $\mu$m$^3$/hr.  How is the radius of the cell increasing when the volume is 500$\mu$m$^3$?}
+  \vspace{2.5in}
+\item{A ramp that is 20 feet long rises a total of 5 feet.  A person is pushing the box up the ramp at a rate of 3 ft/s.  How fast is the box rising?}
+
+  \end{enumerate}
+\pagebreak
+(EXERCISES)
+
+\begin{enumerate}
+  \item{A cylindrical tank of radius 5m is being drained at a rate of 3m$^3$/min.  How fast is the depth of the water in the tank decreasing
+  when the depth is 7m?}
+  
+
+\item{Police radar is stationed near a road.  The officer aims the radar gun at a passing car and the gun is at an angle of 45$^{\circ}$ to the road
+  If the officer records the distance between the car and the radar is decreasing at a rate of 100 km/hr, how fast is the car travelling?
+}
+
+\item{Sand is dumped on a pile in the shape of a cone at a rate of 30 ft$^3$/min.  The diameter and the height of the cone remain equal as the pile
+  grows.  How fast is the height of the pile increasing when the height is 10 ft?
+}
+
+\item{Two cars start off from the same point.  One travels west at 25 mph, the other south at 60mph.  At what speed are they moving apart 2 hours later?
+}
+\item{In a certain species of fish, brain weight as a function of body weight is determied to be $B=0.007W^{2/3}$.  Body weight as a function of body length is determined to be $W=0.12L^{5/2}$.  How fast is the fish brain growing when the fish is 5 cm and growing by 0.1cm/day?
+}
+
+\item{If the radius of a cylinder is decreasing by 2cm/min, and the height is increasing at a rate of 10 cm/min, how is the volume of the cylinder changing when the radius is 5 cm and the height is 15 cm?}
+
+\item{The area between two varying concentric circles is at all times $9\pi$ If the area of the larger circle is increasing by 10$\pi$ in$^2$/sec, how
+fast is the circumference of the smaller circle changing?}
+
+\item{A swimming pool is 12 m long, 7 m wide, 1.2 m deep at the shallow end and 3 m deep at the deep end.  Water is being pumped into the pool
+at a rate of $\frac13$m$^3$/min.  How fast is the water rising when the water is 1 m deep at the deep end?}
+
+\end{enumerate}
+
+\vspace{1in}
+
+\end{document}
+
+

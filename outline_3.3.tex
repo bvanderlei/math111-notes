@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.3:  Derivatives of Trigonometric Functions}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+Compare graphs of the two basic trigonometric functions $\sin{x}$ and $\cos{x}$.\\
+
+\vspace{2.5in}
+
+
+Looks like $\frac{d}{dx}[ \hspace{2cm} ] = $ \\
+
+Check definition.  Need to know that $\sin{(x+y)} = \sin{x}\cos{y}+\sin{y}\cos{x}$
+and $\lim_{h\to 0}\frac{\sin{h}}{h} = 1$.
+
+\vspace{2.5in}
+
+Need also to know that $\lim_{h\to 0}\frac{\cos{h}-1}{h} = 0$.
+
+\vspace{0.1in}
+
+
+
+
+
+\pagebreak
+
+Looks like $\frac{d}{dx}[ \hspace{2cm} ] = $ \\
+
+
+\vspace{2in}
+
+
+
+(OTHER EXAMPLES)  For each function, calculate the derivative and then
+graph the function and the derivative.
+
+
+
+\begin{enumerate}
+\item{$f(x) = \tan{x}$}
+  \vspace{2in}
+\item{$g(x) = \sec{x}$}
+  \vspace{2in}
+\item{$p(x) = \cot{x}$}
+  \vspace{2in}
+\end{enumerate}
+
+\pagebreak
+
+(APPLICATION)\\
+
+Under certain circumstances, the equation that describes the motion of a simple
+spring-mass system is given by $\frac{d^2s}{dt^2} + s = 0$.  Here $s(t)$ is a function that describes the position of the object
+in units of cm, with time measured in seconds.
+
+\vspace{4in}
+
+
+\begin{enumerate}
+\item{Show that $s(t) = \sin{t}$ and $s(t) = \cos{t}$ are both solutions of the equation.}
+  \vspace{2in}
+\item{More generally, show that $s(t) = A\sin{t} + B\cos{t}$ is a solution.}
+  \vspace{2in}
+\item{Find values of $A$ and $B$ if the initial postion of the object is 3 cm to the right of equilibrium,
+  and the initial velocity is 0.}
+    \vspace{2in}
+  \item{Graph $s(t)$, $s'(t)$, and $s''(t)$.}
+        \vspace{3in}
+  \item{At what times is the speed of the object greatest?  Where is the object at those times?}
+            \vspace{1in}
+   \item{At what times is the acceleration of the object greatest?  Where is the object at those times?}
+
+    \vspace{2in}
+\end{enumerate}
+
+\pagebreak
+  (APPLICATION)
+  Quantities that are periodic in nature can often be modeled with a function such as the following.
+  \begin{displaymath}
+P(t) = A + B\cos{\left(\frac{2\pi}{T}(t-\phi)  \right)}
+      \end{displaymath}
+  \vspace{3in}
+  Suppose for example that $P(t)$ represents the hours of daylight in the Fraser Valley as a function of time $t$ in days.
+  We suppose that $t=0$ corresponds to January 1.
+\begin{enumerate}
+\item{  Find values for $A$, $B$, $T$, and $\phi$ if it is assumed that the maximum
+  daylight hours is 16.25, the minimum is 8.25 hours, and the longest day of the year is on June 23 ($t=174$).}
+  \item{What are the number of daylight hours predicted by the model for today ($t=277$)?}
+  \end{enumerate}
+  
+
+  \pagebreak
+(EXERCISES)\\
+
+\begin{enumerate}
+\item{Find $y'$ if $y = \frac{t\sin{t}}{1+t}$}
+  \vspace{1.5in}
+\item{Find $H''\left(\frac{\pi}{3}\right)$ if $H(\theta) = \theta^2\sin{\theta}$}
+  \vspace{1.5in}
+\item{Find $f'(x)$ if $f(x) = x^4e^x\tan{x}$}
+  \vspace{1.5in}
+\item{For what values of $x$ does the graph of $g(x) = x+ 2\sin{x}$ have a horizontal tangent line?  Sketch a the graph of $g$.}
+  \vspace{1.5in}
+
+  \pagebreak
+\item{Evaluate $\lim_{\theta \to 0}\frac{\sin{8\theta}}{3\theta}$}
+  \vspace{1.5in}
+\item{Evaluate $\lim_{t \to 0}\frac{\tan{6t}}{\sin{t}}$}
+  \vspace{1.5in}
+\item{Evaluate $\lim_{x \to 2}\frac{\sin{(x-2)}}{x^2-9x+14}$}
+  \vspace{1.5in}
+\item{Suppose again that $s(t) = A\sin{t} + B\cos{t}$ describes the position of an oscillating mass.
+\begin{enumerate}
+\item{Find values of $A$ and $B$ if the initial postion of the object is 2 cm to the right of equilibrium, and the initial velocity is 3 cm/s.}
+  \item{What is the first time that the object passes through equilibrium?}
+  \item{What is the farthest distance away from equilibrium that the object reaches? }
+  \item{At what times is the object moving the fastest?}
+    
+\end{enumerate}
+}
+
+
+\end{enumerate}
+
+
+\pagebreak
+
+
+
+
+
+
+
+
+\end{document}
+
+

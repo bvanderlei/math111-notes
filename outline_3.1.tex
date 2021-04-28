@@ -1,0 +1,174 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.1:  Derivatives of Polynomials and Exponential Functions}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+The {\bf Power Rule } for derivatives:
+\begin{displaymath}
+\frac{d}{dx}\left[x^n  \right] = nx^{n-1}
+  \end{displaymath}
+for any constant $n$
+
+\vspace{0.5in}
+
+  (EXAMPLES)
+\begin{enumerate}
+\item{$f(x) = x^8$}
+  \vspace{0.2in}
+\item{$p(x) = x^{100}$}
+    \vspace{0.2in}
+\item{$g(t) = t^{22}$}
+  \end{enumerate}
+
+Why does it work?  
+
+\vspace{2.5in}
+
+The {\bf derivative of a constant function}:
+\begin{displaymath}
+\frac{d}{dx}\left[c  \right] = 0
+  \end{displaymath}
+for any constant $c$
+
+\vspace{0.1in}
+
+(EXAMPLE)
+
+\pagebreak
+
+  (EXAMPLES)  Power Rule applies to \emph{any} power!
+
+\begin{enumerate}
+\item{$f(x) = \frac{1}{x^2}$}
+  \vspace{0.3in}
+\item{$g(x) = \frac{1}{\sqrt{x}}$}
+  \vspace{0.3in}
+\item{$p(s) = s^{4.6}$}
+  \vspace{0.3in}
+\end{enumerate}
+
+The {\bf Constant Multiple Rule} for derivatives:
+\begin{displaymath}
+\frac{d}{dx}\left[cf(x)   \right] = c\frac{d}{dx}f(x)
+  \end{displaymath}
+if $f$ and is a differentiable functions and $c$ is a constant
+
+\vspace{0.2in}
+
+(EXAMPLES)\\
+
+\begin{enumerate}
+\item{$f(x) = 1.5x^{12}$}
+  \vspace{0.3in}
+\item{$g(x) = \frac{7}{x^4}$}
+  \vspace{0.3in}
+\item{$p(s) = \pi\sqrt{s}$}
+  \vspace{0.3in}
+\end{enumerate}
+
+
+The {\bf Sum and Difference Rules} for derivatives:
+\begin{displaymath}
+\frac{d}{dx}\left[f(x) + g(x)  \right] = \frac{d}{dx}f(x) + \frac{d}{dx}g(x)
+  \end{displaymath}
+\begin{displaymath}
+\frac{d}{dx}\left[f(x) - g(x)  \right] = \frac{d}{dx}f(x) - \frac{d}{dx}g(x)
+  \end{displaymath}
+if $f$ and $g$ are differentiable functions.
+
+  \vspace{0.2in}
+
+Why do these rules work?  
+
+\pagebreak
+
+
+(EXAMPLES)\\
+
+\begin{enumerate}
+\item{$f(x) = x^9 + 5x^7 - 3x^2 + 13$}
+  \vspace{0.4in}
+\item{$h(x) = \frac{x^2-3}{\sqrt{x}}$}
+  \vspace{0.4in}
+\item{$p(s) = A\sqrt{s} + \frac{B}{\sqrt[4]{s}}$}
+  \vspace{0.4in}
+\item{$w(y) = y^3\left(10-\frac{15}{y^4}\right)$}
+    \vspace{0.4in}
+\end{enumerate}
+
+    \vspace{0.3in}
+
+  (APPLICATIONS)
+  \begin{enumerate}
+  \item{Find the equation for the line tangent to $y=x^2-x^4$ at the point $(1,0)$. Find the equation for the line normal to $y=x^2-x^4$ at the point $(1,0)$.}
+
+  \vspace{2in}
+
+  
+  \pagebreak
+  
+\item{Suppose $s(t) = t^3-12t$ represents the position of a moving object in cm, with time measured in seconds.
+  \begin{enumerate}
+  \item{Find the velocity of the object at $t=1$.}
+  \item{Find the acceleration of the object at $t=1$.}
+  \item{Find the distance traveled from $t=0$ to $t=\sqrt{12}$.}
+  \item{At what time does the object have greater speed, $t=0$ or $t=\sqrt{6}$.}
+  \end{enumerate}
+}
+    \end{enumerate}
+  
+
+
+  \vspace{3in}
+
+The {\bf derivative of the natural exponential function}:
+\begin{displaymath}
+\frac{d}{dx}\left[e^x  \right] = e^x
+  \end{displaymath}
+
+\vspace{0.1in}
+Why?  Because $e$ is special!
+  
+      \pagebreak
+(EXERCISES)
+
+    \begin{enumerate}
+    \item{Find the equation of the line tangent to the curve $y=3x\sqrt{x}$ when $x=1$.}
+      \vspace{3in}
+
+      \item{Find the line that is tangent to the curve $y=e^x$ and parallel to the line $y=5x$.}
+          \vspace{3in}
+        \item{If $y=Ax^2 + Bx + C$, find numbers $A$, $B$, and $C$ so that $y'' + 2y = x^2 -4$.}
+            \vspace{3in}
+          \item{If $f(x)=|x^2-9|$, find a formula for $f'(x)$ all points where $f$ is differentiable.}
+              \vspace{3in}
+          \item{Find a number $c$ so that $y=c\sqrt{x}$ is tangent to $y=1.5x+6$}
+              \vspace{3in}
+  \end{enumerate}
+
+\vspace{3.5in}
+
+
+
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 4.1 Maximum and Minimum Values}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+(DEFINITIONS)
+
+\vspace{0.1in}
+Let $c$ be a number in the domain $D$ of a function $f$.
+\begin{itemize}
+\item{$f(c)$ is an {\bf absolute maximum} of $f$ on $D$ if $f(c)\ge f(x)$ for all $x$ in $D$.}
+\item{$f(c)$ is an {\bf absolute minimum} of $f$ on $D$ if $f(c)\le f(x)$ for all $x$ in $D$.}
+  \end{itemize}
+
+\vspace{2.5in}
+
+NOTE:  These values are sometimes called \emph{global maximum} or \emph{global minimum} or  the \emph{extreme values} of the function.
+
+\vspace{0.1in}
+
+(DEFINITIONS)
+
+\vspace{0.1in}
+Let $c$ be a number in the domain $D$ of a function $f$.
+\begin{itemize}
+\item{$f(c)$ is an {\bf local maximum} of $f$ if $f(c)\ge f(x)$ for $x$ near $c$.}
+\item{$f(c)$ is an {\bf local minimum} of $f$ if $f(c)\le f(x)$ for $x$ near $c$.}
+\end{itemize}
+
+
+\pagebreak
+(EXAMPLES)
+\begin{enumerate}
+\item{$f(x) = \sin{x}$ \quad $D = [0,2\pi]$}
+
+\vspace{1.in}
+
+\item{$g(x) = x^2$ \quad $D = (-\infty,\infty)$}
+
+\vspace{1.in}
+
+\item{$h(x) = x^3$ \quad $D = [-2,3]$}
+
+\vspace{1.in}
+
+\item{  \begin{displaymath}
+p(x) =   \left\{ \begin{array}{ll}
+x & 0\le x <  \frac12 \\
+x-1 & \frac12 \le x \le 1\\
+\end{array} \right.
+  \end{displaymath}
+
+  $D = [0,1]$
+}
+  \vspace{1.5in}
+
+\item{  $q(x) = x^3-2x^2$  \quad $D=[-1,3)$.}
+
+\end{enumerate}
+    \pagebreak
+
+    {\bf Extreme Value Theorem}:  If $f$ is continuous on a closed interval $[a,b]$, then $f$ attains an absolute maximum value
+    $f(c)$ and an absolute minimum value $f(d)$ for some numbers $c$ and $d$ in $[a,b]$.
+
+    \vspace{1.5in}
+    
+    (EXAMPLE) \emph{ Theorem applies:}
+
+
+    \vspace{1.5in}
+    
+    (COUNTEREXAMPLE)  \emph{Theorem does not apply:}
+
+    \vspace{1.5in}
+
+    
+    (COUNTEREXAMPLE)  \emph{Theorem does not apply:}
+
+    \vspace{1.5in}
+
+    (EXAMPLE)  \emph{Theorem does not apply:}
+    \pagebreak
+   
+    {\bf Fermat's Theorem}:  If $f$ has a local maximum or minimum at $c$, and $f'(c)$ exists, then $f'(c)=0$.
+
+    \vspace{2.5in}
+
+    (EXAMPLE) \emph{ Theorem applies:}
+
+
+    \vspace{1.5in}
+    
+    (EXAMPLE)  \emph{Theorem applies:}
+
+    \vspace{1.5in}
+
+    (WARNING)  \emph{Misunderstanding of Theorem:}    
+
+
+    \vspace{1.5in}
+    
+
+         \pagebreak
+
+(DEFINITION)
+
+ A {\bf critical number} of a function $f$ is a number $c$ in the domain of $f$ such that either $f'(c)=0$ or $f'(c)$ does not exist.
+
+ \vspace{.1in}
+ 
+ (EXAMPLES)
+
+ Find the critical numbers for each function
+
+ \begin{enumerate}
+ \item{$h(x) = x^4+4x^3+2$}
+   \vspace{2in}
+ \item{$g(x) = x^{1/3}-x^{-2/3}$}
+   \vspace{2in}
+ \item{$f(x) = |x^2+4x+3|$}
+   \vspace{2in}
+ \end{enumerate}
+
+ 
+ Note:  With this new definition, {\bf Fermat's Theorem} says that if a function $f$ has a local maximum or minimum at $c$, then
+ $c$ is a critical number.
+
+\pagebreak
+
+{\bf Closed Interval Method} for finding the extreme values of a continuous function $f$ on an interval $[a,b]$:
+\begin{enumerate}
+\item{Find the values of $f$ at the critical numbers of $f$ in $(a,b)$.}
+\item{Find the values of $f$ at the endpoints of the interval.}
+    \item{The largest value from 1. and 2. is the absolute maximum, and the smallest value is the absolute minimum.}
+\end{enumerate}  
+
+   \vspace{1in}
+
+   
+(EXAMPLES)
+In each case, find the extreme values of the function on the interval.
+   
+ \begin{enumerate}
+ \item{$h(x) = x^3-3x^2 + 1$ on the interval $[-\frac12, 4]$}
+   \vspace{2in}
+ \item{$f(x) =\ln{(x^2+x+1)}$ on the interval $[-1,1]$}
+   \vspace{2in}
+ \item{$g(x) = xe^{-x^2/8}$ on the interval $[-1, 4]$}
+   \vspace{2in}
+ \item{$p(x) = \frac{x}{x^2-x+1}$ on the interval $[-2, 2]$}
+   \vspace{2.5in}
+ \item{$q(x) = x-k\arctan{x}$ on the interval $[0,4 ]$ \quad (\emph{$k>0$ is a constant})}
+   \vspace{2.5in}
+   \item{$r(x) = x-2\cos{x}$ on the interval $[-2,0]$ }
+   \vspace{2.5in}
+   \item{$s(x) = x\sqrt{x-x^2}$ on the interval $[0,1]$ }
+ \end{enumerate}
+
+   \pagebreak
+
+
+\end{document}
+
+

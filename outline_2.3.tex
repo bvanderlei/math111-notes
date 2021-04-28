@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 2.3:  Limit Laws}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+If limits exist we can do {\bf algebra with limits}.  If $\lim_{x\to a}f(x)$ and $\lim_{x\to a}g(x)$ exist, then
+\begin{displaymath}
+  \lim_{x\to a}f(x) + \lim_{x\to a}g(x) =  \lim_{x\to a}(f(x) + g(x))
+  \end{displaymath}
+
+\vspace{2.5in}
+
+
+Other simple rules:
+\begin{displaymath}
+  \lim_{x\to a}x = a \quad\quad\quad   \lim_{x\to a}c = c   
+  \end{displaymath}
+where $c$ is a constant\\
+
+\vspace{.5in}
+
+(EXAMPLES)
+
+\begin{enumerate}
+  \item{
+\begin{displaymath}
+  \lim_{x\to 0} x^2-3 = 
+  \end{displaymath}
+
+\vspace{.5in}
+
+}
+
+    \vspace{1.0in}
+
+
+          \item{
+\begin{displaymath}
+  \lim_{x\to 2} \frac{4x^2(x-2)}{x^2+x-6} = 
+  \end{displaymath}
+
+\vspace{1.5in}
+
+  }
+
+
+  \end{enumerate}
+
+\pagebreak
+
+(THEOREM) If $f(x)=g(x)$ when $x\neq a$ then $\lim_{x\to a}f(x)  = \lim_{x\to a}g(x) $ if the limits exist. \\
+
+\vspace{.5in}
+
+(EXAMPLES)
+\begin{enumerate}
+\item{$\lim_{h \to 0}\frac{(-6+h)^2-36}{h}$}
+
+  \vspace{2in}
+  
+\item{$\lim_{t \to 0}\frac{\sqrt{9+t}-3}{t}$}
+
+  \vspace{2in}
+  
+\item{$\lim_{x\to 1}\frac{x^4-1}{x^3-1}$}
+
+
+  \end{enumerate}
+
+\pagebreak
+
+
+
+\end{document}
+
+

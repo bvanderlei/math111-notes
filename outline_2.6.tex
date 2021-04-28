@@ -1,0 +1,192 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 2.6:  Limits at Infinity}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+(EXAMPLES)  Suppose the population of turtles on a remote island is modeled by the following function, where $t$ is measured in years.
+\begin{displaymath}
+  P(t) = \frac{15000}{50 + 250e^{-0.05t}}
+  \end{displaymath}
+What do we expect will happen to the size of the population after many years?\\
+
+\vspace{2in}
+
+(DEFINITION)  Suppose $f$ is a function defined for all $x>a$ for some constant $a$.  Then 
+\begin{displaymath}
+  \lim_{x\to \infty}f(x) = L
+  \end{displaymath}
+means $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently large.  We say that $L$ is the {\bf limit} of $f$ as $x$ goes to $\infty$.
+
+\vspace{0.5in}
+
+(EXAMPLES)
+\begin{enumerate}
+  \item{
+\begin{displaymath}
+  \lim_{x\to \infty} \frac{x}{x-2} = 
+  \end{displaymath}
+}
+\vspace{1.5in}
+
+
+  \item{
+\begin{displaymath}
+  \lim_{x\to -\infty} \frac{x}{x-2} = 
+  \end{displaymath}
+  }
+
+      \end{enumerate}
+
+
+
+\pagebreak
+
+\begin{center}
+\Large
+\rm{Horizontal Asymptotes}
+\end{center}
+
+
+(DEFINITION) The graph of a function $f$ has a {\bf horizontal asymptote} at $y=L$ if either:
+ \begin{displaymath}
+  \lim_{x\to \infty} f(x) = L \quad \textrm{or} \lim_{x\to -\infty} f(x) = L
+  \end{displaymath}
+  
+
+\vspace{.5in}
+
+(EXAMPLES) \\
+Find equations for all vertical and horizontal asymptotes of the graphs of the following functions.
+\vspace{.1in}
+\begin{displaymath}
+g(x) = \frac{x-3}{9x^2-2}
+  \end{displaymath}
+
+\vspace{1.7in}
+
+\begin{displaymath}
+h(x) = \frac{\sqrt{3x^2+10}}{5x-1}
+  \end{displaymath}
+
+\vspace{1.7in}
+
+\begin{displaymath}
+f(x) = \frac{5e^x}{e^x-3}
+  \end{displaymath}
+
+\vspace{1.5in}
+
+
+\pagebreak
+
+
+(MORE EXAMPLES)
+
+\begin{enumerate}
+  
+\item{
+\begin{displaymath}
+  \lim_{x\to \infty} \frac{8}{e^x-2} = 
+  \end{displaymath}
+}
+
+  \vspace{1.5in}
+
+  \item{
+\begin{displaymath}
+  \lim_{x\to \infty} \frac{1+ x^2}{8x^2+x+1} = 
+  \end{displaymath}
+}
+
+
+    \vspace{1.5in}
+    
+  \item{
+\begin{displaymath}
+  \lim_{x\to \infty} \ln{(x^3+1)}
+  \end{displaymath}
+
+    \vspace{1.5in}
+
+  }
+
+
+      \item{
+\begin{displaymath}
+  \lim_{x\to \infty} \cos{x}
+  \end{displaymath}
+
+\vspace{1in}
+
+  }
+
+              \item{
+\begin{displaymath}
+  \lim_{x\to \infty} \sin{\left(\frac{\pi}{x}\right)}
+  \end{displaymath}
+
+\vspace{1in}
+
+  }
+
+
+  \end{enumerate}
+
+\pagebreak
+
+If $\lim_{x\to \infty}f(x) = \infty$ and $\lim_{x\to \infty}g(x) = \infty$ there are
+3 possibilities for the limit
+
+\begin{displaymath} 
+\lim_{x\to \infty}\frac{f(x)}{g(x)} 
+  \end{displaymath}
+
+\begin{enumerate}
+\item{\begin{displaymath} 
+\lim_{x\to \infty}\frac{f(x)}{g(x)} =
+  \end{displaymath}
+}
+  
+  \vspace{0.2in}
+  
+\item{\begin{displaymath} 
+\lim_{x\to \infty}\frac{f(x)}{g(x)} =
+  \end{displaymath}
+}
+  
+  \vspace{0.2in}
+  
+\item{\begin{displaymath} 
+\lim_{x\to \infty}\frac{f(x)}{g(x)} =
+  \end{displaymath}
+}
+
+  \vspace{0.2in}
+  
+  \end{enumerate}
+
+
+The outcome is determined by the \emph{rate at which the functions grow} as $x \to \infty$.
+
+  \vspace{0.2in}
+(EXAMPLES)
+
+
+\end{document}
+
+

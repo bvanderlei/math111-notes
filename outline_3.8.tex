@@ -1,0 +1,167 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 111}
+\\
+\rm{Chapter 3.8:  Natural Growth/Decay}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Law of Natural Growth/Decay}\\
+\begin{displaymath}
+\frac{dy}{dt} = ky  
+\end{displaymath} 
+
+\vspace{1in}
+This differential equation is often given together with an initial condition $y(0)=y_0$.  Together, the equation and initial condition
+are known as an \emph{initial value problem}.
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+\frac{dy}{dt} = ky \\
+y(0) = y_0 \\
+\end{array} \right.
+\end{displaymath}
+
+\vspace{0.2in}
+
+(THEOREM)
+The only solution to the initial value problem is $y(t) = y_0e^{kt}$.
+
+\vspace{0.2in}
+
+(EXAMPLE)\\
+Find the solution to the initial value problem.
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+\frac{dy}{dt} = 2y \\
+y(0) = 10 \\
+\end{array} \right.
+\end{displaymath}
+
+\vspace{1in}
+
+APPLICATION:  POPULATION GROWTH
+
+\vspace{.1in}
+
+Suppose that a colony of bacteria grows at a rate proportional to its size (law of natural growth) and that the population
+of the colony doubles in 8.5 hours.  Find the population of the colony at time $t$ if the initial population is 1200 bacteria.
+
+\vspace{1.in}
+\pagebreak
+
+A city population is 120000 and experiences a continuous relative growth of 3\% in the population over 10 years.  What is the populaton at the
+end of the 10 year period?
+
+
+\vspace{2.5in}
+
+The following statements are equivalent:
+
+\begin{itemize}
+\item{$y$ has a growth rate proportional to its size.}
+\item{$y$ has a constant \emph{relative} growth rate.}
+\item{$y$ grows exponentially.}
+  \item{$y$ has a fixed ``doubling time''.}
+  \end{itemize}
+
+\vspace{.1in}
+
+APPLICATIONS: EXPONENTIAL DECAY\\
+
+
+\begin{enumerate}
+\item{Suppose that the amount of a drug in the bloodstream decays exponentially with a half-life of 0.5 hours.  If the amount of the drug starts 
+at 180 mg, how much of the drug remains 2 hours later?  How much remains 15 minutes later?  At what time $T$ will there be exactly 50 mg of the drug
+in the bloodstream?}
+\vspace{2in}
+
+\pagebreak
+
+\item{The level of carbon-14 decays exponentially and is used to date old organic objects.  The half-life of carbon-14 is known to be 5730 years.  If a  wooden object 
+  contains 17.1\% of the level of carbon-14 as a living tree does, how old is the object?}
+
+  \vspace{2.5in}
+
+\item{A pond has water volume 200000 m$^3$.  The pond is fed by a stream at a rate of 1000 m$^3$/day, and is drained at the same rate by a stream on the opposite side so that the volume remains constant.  Suppose that at time $t=0$, 4kg of a pollutant is spilled into the pond.  Assume that the pollutant mixes uniformly around the pond and drains with the outflowing stream.  }
+  \begin{enumerate}
+
+  \item{Write down $P(t)$, the amount of pollution remaining after $t$ days.  }
+  \item{How many days before the level of pollution in the pond is reduced to 0.1kg?}
+    \end{enumerate}
+
+
+\end{enumerate}
+
+
+\pagebreak
+
+LAW OF COOLING \\
+Consider an object with temperature $T(t)$ that is exposed to an environment with contant temperature $A$.  The temperature may be
+modeled with Newton's Law of Cooling.
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+\frac{dT}{dt} = k(A-T) \\
+T(0) = T_0 \\
+\end{array} \right.
+\end{displaymath}
+
+\vspace{1.5in}
+
+(EXAMPLES)
+\begin{enumerate}
+\item{A hot cake is removed from the oven and placed in a room of temperature 70$^{\circ}$F.  If the temperature of the cake
+  follows $\frac{dT}{dt} = 0.92(70-T)$ and the inital temperature of the cake is 200$^{\circ}$F, find the temperaure at time $t=2$ hours.}
+  \vspace{3in}
+
+\pagebreak
+\item{A hot coffee at 80$^{\circ}$C is left in a room at 20$^{\circ}$C.  After 10 minutes the coffee is 76$^{\circ}$C.  How long until the
+coffee cools to 72$^{\circ}$C?}
+
+\end{enumerate}
+
+
+
+\vspace{5in}
+
+(EXERCISES)
+
+\begin{enumerate}
+\item{It is determined that an invasive species of fish grows with a constant relative growth rate and that the population doubles in 3 years
+\begin{enumerate}
+\item{How long does it take to increase by a factor of 10?  }
+\item{What is the value of the relative growth rate?  (Units will be fish/year/fish.)}
+\end{enumerate}
+}
+
+\item{A certain radioactive material has half-life of 2.5 years. 
+\begin{enumerate}
+\item{How long until a mass of 300 grams of this material decays to 5 gram?}
+\item{What is the decay rate at the time it reaches mass 5 gram? (Units will be grams/year.)}
+\end{enumerate}
+}
+
+\item{Let $v(t)$ be the velocity of a falling object of mass 1 kg.  A simple model for the velocity is the equation $v' = 9.8 - 0.1v$.
+  \\ (In this model, 9.8 is the acceleration due to gravity, and $0.1v$ is the drag force that the object experiences as it falls.)
+\begin{enumerate}
+\item{Find a formula for  $v(t)$ if $v(0)=0$.  (\emph{Hint:  Change variables.  Let $u(t) = 9.8-0.1v(t)$}.) }
+\item{Determine what happens to the velocity as $t\to\infty$.}
+\end{enumerate}
+
+}
+\end{enumerate}
+
+\end{document}
+
+
